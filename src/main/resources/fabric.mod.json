@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "dupeme",
+	"version": "${version}",
+	"name": "DupeMe",
+	"description": "Gives you 2x of what you're holding!",
+	"authors": [
+		"pog5"
+	],
+	"contact": {
+		"sources": "https://github.com/pog5/dupeme"
+	},
+	"license": "BSD-3-Clause",
+	"icon": "assets/dupeme/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "org.nightlyeu.DupeMe",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "org.nightlyeu.DupeMeClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
