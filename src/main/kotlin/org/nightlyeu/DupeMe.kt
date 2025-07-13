@@ -28,11 +28,15 @@ object DupeMe : ModInitializer {
 		val source = context.source
 		val player = source.player ?: return 0
 		val item = player.mainHandStack
-		val amt =
+		var amt =
 		try {
 			IntegerArgumentType.getInteger(context, "count")
 		} catch (_: IllegalArgumentException) {
-			return 1
+			1
+		}
+
+		if (amt > 2500) {
+			amt = 2500
 		}
 
 		for (i in 1..amt) {
