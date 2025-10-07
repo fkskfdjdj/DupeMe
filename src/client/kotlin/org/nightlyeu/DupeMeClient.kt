@@ -14,8 +14,7 @@ object DupeMeClient : ClientModInitializer {
 		KeyBinding(
 			"key.dupeme.keybind",
 			GLFW.GLFW_KEY_EQUAL,
-			"key.categories.dupeme"
-		)
+			KeyBinding.Category.MISC	)
 	)
 
 	override fun onInitializeClient() {
